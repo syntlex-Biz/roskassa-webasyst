@@ -1,0 +1,15 @@
+<form id="payment-form" method="POST" action="{$url}" >
+    <input type="hidden" name="shop_id" value="{$shop_id}">
+    <input type="hidden" name="amount" value="{$amount}">
+    <input type="hidden" name="order_id" value="{$order_id}">
+    <input type="hidden" name="currency" value="{$curr}">
+    <input type="hidden" name="lang" value="ru">
+
+
+    {if $test}
+    <input type="hidden" name="test" value="{$test}">
+    {/if}
+    <input type="hidden" name="sign" value="{$sign}">
+
+    <input type="submit" value="Оплатить">
+</form>
